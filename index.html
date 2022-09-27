@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="js.js"></script>
+		<title>FlipBook</title>
+	</head>
+	<style type="text/css">
+		body {
+			/* overflow: hidden; */
+			background: url('images/bg.jpg');
+			background-size: 100% cover;
+		}
+		#album {
+			width: 100%;
+			height: 900px;
+			margin: 5% auto;
+		}
+	</style>
+	<body>
+		<div id="album">
+			<div
+				style="background: url('images/1.jpg'); background-size: 100% 100%"
+			></div>
+			<div style="background: url('images/2.jpg'); background-size: cover"></div>
+			<div style="background: url('images/3.jpg'); background-size: cover"></div>
+			<div style="background: url('images/4.jpg'); background-size: cover"></div>
+			<div style="background: url('images/5.jpg'); background-size: cover"></div>
+			<div style="background: url('images/6.jpg'); background-size: cover"></div>
+			<div style="background: url('images/7.jpg'); background-size: cover"></div>
+			<div style="background: url('images/8.jpg'); background-size: cover"></div>
+			<div style="background: url('images/9.jpg'); background-size: cover"></div>
+			<div style="background: url('images/10.jpg'); background-size: cover"></div>
+			<div style="background: url('images/11.jpg'); background-size: cover"></div>
+			<div style="background: url('images/12.jpg'); background-size: cover"></div>
+			<div style="background: url('images/13.jpg'); background-size: cover"></div>
+			<div style="background: url('images/14.jpg'); background-size: cover"></div>
+			<div style="background: url('images/15.jpg'); background-size: cover"></div>
+			<div style="background: url('images/16.jpg'); background-size: cover"></div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+		<script src="turn.js"></script>
+		<script>
+			$('#album').turn({ gradients: true, acceleration: true });
+		</script>
+	</body>
+</html>
